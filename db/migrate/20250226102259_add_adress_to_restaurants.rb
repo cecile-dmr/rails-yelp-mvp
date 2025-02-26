@@ -1,5 +1,5 @@
 class AddAdressToRestaurants < ActiveRecord::Migration[7.1]
   def change
-    add_column :restaurants, :adress, :string
+    rename_column :restaurants, :adress, :address
   end
 end
